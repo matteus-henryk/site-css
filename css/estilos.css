@@ -1,12 +1,18 @@
 body {
-    background-image: url('https://image.freepik.com/fotos-gratis/fundo-gradiente-suave_77528-21.jpg');
+    background-image: url('https://miro.medium.com/max/10378/1*c1M-9xmipeRtQJpagPS41g.png');
     background-size: auto 100vh;
-    Font-Family: Arial;
     height: 100vh;
+
+  }
+
+body {
+    background-color: lightslategray;
+    opacity: unset;
   }
   
   .menu {
-    background-color: #1E90FF;
+    color: lightblue;
+    Font-Family: Arial;
   }
   
   .menu ul {
@@ -29,8 +35,10 @@ body {
   
   .site-subtitle,
   .site-title{
-    color: #c0c0c0;
+    color: rgb(255, 255, 255);
     text-align: center;
+    opacity: 1;
+    Font-Family: Arial;
   }
   
   .site-subtitle {
