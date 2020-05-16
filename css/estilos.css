@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url('../img/fundo.png');
+  background-image: url('../img/fundo7.png') ;
   background-size: auto 100vh; 
   font-family: 'VT323', monospace;
   height: 100vh;
@@ -42,10 +42,12 @@ header {
 }
 
 .menu {
-  background-color: white;
   position: fixed;
-  width: 100vw;
+  width: 90vw;
   top: 0;
+  background-color: #DFFF0F;
+  box-shadow: 5px 5px 8px black;
+  z-index: 1;
 }
 
 .menu ul {
@@ -61,16 +63,35 @@ header {
   
   display: block;
   padding: 10px 20px;
+  transition: background-color 1s, color , 1s;
+
+}
+
+.menu a:hover {
+  background-color: black;
+  color: #DFFF0F;
 }
 
 a {
-  color: teal;
+  color: black;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
+
+  .titulo {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: linear 2s animacaoTitulo forwards;
+  }
+
+    @keyframes animacaoTitulo {
+      100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+      }
+    }
 
 .site-subtitle, 
 .site-title {
@@ -87,16 +108,18 @@ a:hover {
  font-style: italic;
  font-family: 'VT323', monospace;
  line-height: 1.8em;
+ font-size: 2.5em;
 }
 
+.contato,
 .portfolio {
   padding: 2em;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .portfolio h2 {
   font-family: 'VT323', monospace;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   margin-bottom: 1.5em;
   font-size: 2em;
 }
@@ -122,6 +145,8 @@ a:hover {
   }
 }
 
+
+
 .portfolio figure {
   text-align: center;
 }
@@ -131,4 +156,37 @@ a:hover {
   width: 240px;
   object-fit: cover;
   object-position: left bottom;
+  border-radius: 10%;
+  transition: transform 500ms;
+  box-shadow:5px 5px 8px black;
 }
+
+.img-portfolio:hover {
+  transform: scale(1.2);
+}
+.cont {
+  font-size: 65px;
+}
+
+.contato a {
+  color: whitesmoke;
+  font-size: 2em;
+  transition: transform 700ms;
+}
+.contato a:active,
+.contato a:hover {
+  text-decoration: none;
+  text-shadow:0px 0px 5px rgba(255, 238, 0, 0.822);
+  transition: text-shadow 1s;
+}
+
+.contato a:hover {
+  transform: rotateY(360deg);
+}
+
+    .contato .icons {
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+     
+    }
