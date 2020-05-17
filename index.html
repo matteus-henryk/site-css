@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="menu">
-            <ul>
+            <ul class="container">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -23,35 +23,100 @@
             <h1 class="site-title">Matteus henryk C. Francischini</h1>
             <h2 class="site-subtitle">learning programming</h2>
         </div>
-        
+
     </header>
-    <section class="portfolio" id="portfolio">
-        <div class="grid">        
-            <h2>Aprendendo a programar...</h2>
-            <figure>
-                <img class="img-portfolio" src="./img/aprendendo-programar.gif" alt="Gif">
-            <figcaption>Logica de programação</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="./img/programando.gif" alt="Gif">
-                <figcaption>Estrutuda de dados</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="img/programando4.gif" alt="Gif">
-                <figcaption>Banco de dados</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="img/programando3.gif" alt="Gif">
-                <figcaption>Orientação a objetos</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="img/programando2.gif" alt="Gif">
-                <figcaption>HTML5/CSS3</figcaption>
-            </figure>
+    <section class="sobre container">
+        <h2>Sobre</h2>
+        <figure class="avatar">
+            <img src="../imersao-css/img/foto-perfil.jpg" alt="perfil">
+        </figure>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Minima enim officiis, repellendus facilis nesciunt doloribus debitis,
+            fugiat corrupti distinctio omnis iusto excepturi reprehenderit dicta
+            itaque laboriosam? Harum sunt dolores enim!
+        </p>
+        <p>
+            Cupiditate fugit sunt exercitationem id aliquid fugiat
+            ipsa veritatis eligendi ipsam mollitia odit modi, nemo
+            incidunt accusantium quam, impedit qui iusto suscipit.
+            Commodi ipsa ea laudantium possimus reiciendis quae fugit.
+        </p>
+
+        <p>
+            Totam, vel reprehenderit exercitationem non doloremque
+            et praesentium commodi, aliquid quae ad consequatur omnis eius assumenda!
+            Sapiente nostrum odit, expedita veritatis rerum magnam assumenda,
+            necessitatibus saepe quidem omnis voluptates modi?
+        </p>
+        <p>
+            Este site foi contruido durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura!</a>
+        </p>
+    </section>
+    <section class="portfolio container">
+        <div class="grid">
+            <h2>Aprendendo...</h2>
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="./img/aprendendo-programar.gif" alt="Gif">
+                        <figcaption>Logica de programação</figcaption>
+                    </figure>
+                    <div class="card-back">
+                        oi eu sou a parte de trás ;)
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="./img/programando.gif" alt="Gif">
+                        <figcaption>Estrutuda de dados</figcaption>
+                    </figure>
+                    <div class="card-back">
+                        oi eu sou a parte de trás ;)
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="img/programando4.gif" alt="Gif">
+                        <figcaption>Banco de dados</figcaption>
+                    </figure>
+                    <div class="card-back">
+                        oi eu sou a parte de trás ;)
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="img/programando3.gif" alt="Gif">
+                        <figcaption>Orientação a objetos</figcaption>
+                    </figure>
+                    <div class="card-back">
+                        oi eu sou a parte de trás ;)
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="img/programando2.gif" alt="Gif">
+                        <figcaption>HTML5/CSS3</figcaption>
+                    </figure>
+                    <div class="card-back">
+                        oi eu sou a parte de trás ;)
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
-    <section class="contato" id="contato">
+    <section class="contato container" id="contato">
         <h2 class="cont">Contato</h2>
         <div class="grid icons">
             <a target="_blank" href="https://github.com/matteus-henryk">

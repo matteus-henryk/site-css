@@ -41,9 +41,10 @@ header {
   align-items: center;
 }
 
+
 .menu {
   position: fixed;
-  width: 90vw;
+  width: 100vw;
   top: 0;
   background-color: #DFFF0F;
   box-shadow: 5px 5px 8px black;
@@ -96,39 +97,78 @@ a:hover {
 .site-subtitle, 
 .site-title {
   color: whitesmoke;
-  text-align: center;
+  
 }
 
 .site-title {
+  text-align: center;
   font-size: 4em;
   font-family: 'VT323', monospace;
 }
 
 .site-subtitle {
+ text-align: center;
  font-style: italic;
  font-family: 'VT323', monospace;
  line-height: 1.8em;
  font-size: 2.5em;
 }
-
+.sobre,
 .contato,
 .portfolio {
   padding: 2em;
   min-height: 100vh;
 }
 
+@media (min-width:1200px) {
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+
+.sobre h2,
 .portfolio h2 {
   font-family: 'VT323', monospace;
   color: rgb(0, 0, 0);
   margin-bottom: 1.5em;
   font-size: 2em;
+
+}
+
+.sobre p {
+  text-indent: 1em;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+.sobre a {
+  color: whitesmoke;
+}
+
+.sobre .avatar {
+  float: left;
+  margin-right: 2em;
+}
+
+.sobre .avatar img {
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px black;
+  transition: transform 1.5s;
+}
+
+
+.sobre .avatar img:hover {
+   transform: rotate(360deg);
 }
 
 .portfolio .grid {
   display: grid;
-  gap: 2em;
+  gap: 8em;
   
 }
+
 
 @media (min-width: 560px) {
   .portfolio .grid {
@@ -153,7 +193,7 @@ a:hover {
 
 .img-portfolio {
   height: 180px;
-  width: 240px;
+  width: 100%;
   object-fit: cover;
   object-position: left bottom;
   border-radius: 10%;
@@ -161,11 +201,40 @@ a:hover {
   box-shadow:5px 5px 8px black;
 }
 
-.img-portfolio:hover {
-  transform: scale(1.2);
+.flip-card {
+  perspective:500px;
 }
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-back {
+  background-color: rgb(145, 255, 0);
+  height: 180px;
+  width: 100%;
+  border-radius: 10%;
+  transform: rotateY(180deg);
+ 
+}
+
 .cont {
   font-size: 65px;
+  padding: 10px;
 }
 
 .contato a {
