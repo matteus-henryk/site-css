@@ -82,15 +82,18 @@ a:hover {
 }
 
   .titulo {
-    transform: scale(0.2) translateY(50vh);
+    transform: skewY(180deg);
     opacity: 0;
-    animation: linear 2s animacaoTitulo forwards;
+    animation: linear 900ms animacaoTitulo infinite;
+    transition: animacaoTitulo 1s;
   }
 
     @keyframes animacaoTitulo {
       100% {
-        transform: scale(1) translateY(0);
+        transform: skewY(180deg);
         opacity: 1;
+        animation: linear 900ms animacaoTitulo infinite;
+        
       }
     }
 
